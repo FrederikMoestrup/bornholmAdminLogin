@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-image {
+  background-color: #ddd;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.lower-part {
+  display: grid;
+  grid-template-columns: 1fr 4fr; /* Sidebar: 1 part, Main content: 3 parts */
+  flex: 1; /* Take the remaining height */
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-right: 1px solid #ccc;
+}
+
+.sidebar .menu {
+  list-style-type: none;
+}
+
+.sidebar .menu li {
+  margin: 10px 0;
+}
+
+.sidebar .menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar .menu li a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Header */
+
+.header-logo {
+  width: 60%;
+}
